@@ -1,16 +1,27 @@
 :host{
 
     .contenedor{
-        padding-top: 20px;
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        .contenedor-titulo-formulario{
+            display: flex;
+            width: 100%;
+            background: #d3d3d3a3;
+            font-size: 24px;
+            font-weight: 500;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+
+        }
 
         .card-formulario{
             margin-top: 40px;
             width: 100%;
             max-width: 800px;
-            min-height: 400px;
+            padding: 30px;
         }
     }
 
