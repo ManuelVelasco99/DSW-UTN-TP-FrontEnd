@@ -8,6 +8,10 @@ const routes: Routes = [
 		path: 'agregar',
 		component: CaracteristicasAgregarComponent
 	},
+    {
+		path: 'editar/:id',
+		component: CaracteristicasAgregarComponent
+	},
 ];
 
 @NgModule({

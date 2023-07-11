@@ -1,0 +1,18 @@
+:host{
+
+    mat-form-field{
+        width: 360px;
+    }
+
+    .contenedor-campos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-boton{
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}

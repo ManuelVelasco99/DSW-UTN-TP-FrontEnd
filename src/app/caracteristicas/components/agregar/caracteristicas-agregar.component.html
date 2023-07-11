@@ -1,8 +1,21 @@
 <app-layout-formulario
-    [tituloFormulario]="'Agregar caracteristica'"
+    [tituloFormulario]="tituloFormulario"
 >
-vcbvcbvcbvc
     <contenido>
-        <p>caracteristicas-agregar works!</p>
+        <form action="">
+
+            <div class="contenedor-campos">
+                <mat-form-field>
+                    <mat-label>Nombre</mat-label>
+                    <input matInput required>
+                </mat-form-field>
+
+            </div>
+
+            <div class="contenedor-boton">
+                <button mat-raised-button color="primary">{{textoBoton}}</button>
+            </div>
+
+        </form>
     </contenido>
 </app-layout-formulario>

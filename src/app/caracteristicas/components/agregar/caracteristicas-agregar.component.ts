@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Component      } from '@angular/core';
 
 @Component({
   selector    : 'app-caracteristicas-agregar',
@@ -7,6 +8,19 @@ import { Component } from '@angular/core';
 })
 export class CaracteristicasAgregarComponent {
 
+    public idCaracteristica! : number;
+    public tituloFormulario  : string = 'Agregar característica';
+    public textoBoton        : string = 'Agregar';
 
+    constructor(
+        private route : ActivatedRoute
+    ) {
+        let paramId = route.snapshot.params['id'];
+        if(paramId) {
+            this.idCaracteristica = paramId;
+            this.tituloFormulario = 'Editar característica';
+            this.textoBoton       = 'Guardar';
+        }
+    }
 
 }
